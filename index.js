@@ -1,6 +1,8 @@
-let num1 = 0;
-let num2 = 0;
+let num1 = ;
+let num2 = ;
 let operator = "";
+let buttons = document.querySelectorAll('.btn');
+let display = document.getElementById('display')
 
 function add(a, b) {
     return a + b;
@@ -33,8 +35,6 @@ function operate(num1, num2, operator) {
     }
 }
 
-let buttons = document.querySelectorAll('.btn');
-let display = document.getElementById('display')
 
 buttons.forEach(button => {
     button.addEventListener('click', () => {
@@ -43,3 +43,22 @@ buttons.forEach(button => {
     });
 });
 
+function getDisplayValue() {
+    operator = op;
+    num1 = num2;
+}
+
+function calculate() {
+    num1 = number(num1)
+    num2 = number(num2)
+
+    if (operator === "+") {
+        num1 = num1 + num2;
+    } else if (operator === "-") {
+        num1 = num1 - num2 
+    } else if (operator === "*") {
+        num1 = num1 * num2 
+    } else if (operator === "/") {
+        num1 = num1 / num2 
+    }
+}
