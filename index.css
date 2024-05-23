@@ -8,7 +8,6 @@
 body {
     width: 100%;
     height: 100vh;
-    border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,9 +16,9 @@ body {
 /* CALCULATOR LAYOUT */
 
 #calculator {
-    border: 1px solid blue;
-    width: 500px;
-    height: 500px;
+    border-radius:50px;
+    width: 700px;
+    height: 600px;
     display: flex;
     flex-direction: column;
 }
@@ -29,7 +28,7 @@ body {
 #display-screen {
     width: 100%;
     height: 20%;
-    background-color: black;
+    background-color: rgb(21, 20, 20);
     display: flex;
     justify-content: end;
     align-items: center;
@@ -43,30 +42,73 @@ body {
 /* KEYS */
 
 #btn-container {
-    border: 3px solid green;
+    
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 3fr 1fr;
+}
+
+button {
+    border: 1px solid gray;
 }
 
 
 #operators {
-    border: 3px solid green;
-   
+    grid-column: 1 / 3 ;
+    display: flex;
+}
+
+#operator {
+    width: 25%;
+    background-color: lightgray;
 }
 
 #numbers {
-    border: 2px solid orange;
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#number {
+    background-color: white;
+}
+
+#num-row1 {
+    height: 25%;
+    display: flex;
+}
+
+#num-row2 {
+    height: 25%;
+    display: flex;
+}
+
+#num-row3 {
+    height: 25%;
+    display: flex;
+}
+
+#num-row4 {
+    height: 25%;
+    display: flex;
+}
+
+.number {
+    width: 100%;
 }
 
 #result {
-    border: 3px solid purple;
-    
+    grid-column: 2 / 3;
 }
 
-
-
+#eaqual {
+    width: 100%;
+    height: 100%;
+    background-color: coral;
+}
 
 button {
     width: 10%;
