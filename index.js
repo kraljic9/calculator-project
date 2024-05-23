@@ -1,3 +1,7 @@
+let a;
+let b;
+let operator;
+
 
 let add = (a, b) => {
     return a + b
@@ -14,7 +18,4 @@ let multiply = (a, b) => {
 let divide = (a, b) => {
     return a / b
 }
-
-
-console.log(subtract(10, 3))
 
