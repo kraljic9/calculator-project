@@ -30,14 +30,20 @@ body {
     height: 20%;
     background-color: rgb(21, 20, 20);
     display: flex;
-    justify-content: end;
-    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
     color: white;
 }
 
-#screen-txt {
+#previous {
     color: white;
-    font-size: 4rem;
+    font-size: 30px;
+}
+
+#current {
+    font-size: 50px;
+    color: white;
 }
 
 /* KEYS */

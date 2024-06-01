@@ -9,15 +9,16 @@
 <body>
     <div id="calculator">
         <div id="display-screen">
-            <p id="screen-txt"></p>
+            <div id="previous"></div>
+            <div id="current"></div>
         </div>
         
         <div id="btn-container">
             <div id="operators">
-                <button id="operator" class="function key">+</button>
-                <button id="operator" class="function key">-</button>
-                <button id="operator" class="function key">*</button>
-                <button id="operator" class="function key">/</button>
+                <button id="operator" class="operator">+</button>
+                <button id="operator" class="operator">-</button>
+                <button id="operator" class="operator">*</button>
+                <button id="operator" class="operator">/</button>
             </div>
 
         
@@ -41,14 +42,14 @@
                 </div>
             
                 <div id="num-row4">
-                    <button id="c" class="clear number key">c</button>
-                    <button id="." class="number key">.</button>
+                    <button id="clear-btn" class="clear number key">c</button>
+                    <button id="decimal" class="number key">.</button>
                     <button id="0" class="number key">0</button>
                 </div>
             </div>
 
             <div id="result">
-                <button id="eaqual" class="function key">=</button>
+                <button id="eaqual" class="eaqual function key">=</button>
             </div>
         </div>
            
